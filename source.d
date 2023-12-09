@@ -1,6 +1,6 @@
-// Isso e um jogo onde voce escolhe solucoes para os problemas do mundo.
+// Isto e um jogo onde voce escolhe solucoes para os problemas do mundo.
 
-// isso é para não mostrar a tela do prompt na hora que abrir o jogo
+// isto é para não mostrar a tela do prompt na hora que abrir o jogo
 pragma(linkerDirective, "/subsystem:windows");
 pragma(linkerDirective, "/entry:mainCRTStartup");
 
@@ -10,7 +10,7 @@ import arsd.simpledisplay : Color, Image, Key, KeyEvent, OperatingSystemFont, Pe
 import std.stdio;
 import std.string : wrap;
 
-// essa estrutura vai modelar os cenários do jogo
+// esta estrutura vai modelar os cenários do jogo
 struct Cenario
 {
     // contem o nome, a imagem do cenario, a frase dele em Portugues e Ingles e os arrays com as opcoes dele, em Portugues e Ingles
@@ -83,7 +83,7 @@ void main()
                             [wrap("Aumentar o policiamento", 20), wrap("Replantar as áreas destruídas", 20), wrap("Investir nas ONGs de preservação", 20)],
                             [wrap("Increase the forest's policing", 20), wrap("Replant the destroyed areas", 20), wrap("Invest in preservation NGOs", 20)]);
 
-    // esse array vai conter todos os cenarios do jogo
+    // este array vai conter todos os cenarios do jogo
     Cenario[6] listaCenarios = [primeiro, segundo, terceiro, quarto, quinto, sexto];
 
     // criamos as avaliações que você receberá no final do jogo para saber quais resultados atingiu
