@@ -13,16 +13,18 @@ import std.string : wrap;
 // esta estrutura vai modelar os cenários do jogo
 struct Cenario
 {
-    // contem o nome, a imagem do cenario, a frase dele em Portugues e Ingles e os arrays com as opcoes dele, em Portugues e Ingles
+    // isso vai ser o nome
     string nome;
+    // isso vai ser a imagem do cenario
     Image img;
+    // esses vão ser a frase dele em Portugues e Ingles
     string frasePortugues, fraseIngles;
+    // esses vão ser os arrays com as opcoes dele, em Portugues e Ingles
     string[3] opçoesPortugues, opçoesIngles;
 
-    // o construtor da struct
+    // esse é o construtor da struct
     this (string nome, Image img, string frasePortugues, string fraseIngles, string[3] opçoesPortugues, string[3] opçoesIngles)
     {
-        // inicializa todas as variaveis acima
         this.nome = nome;
         this.img = img;
         this.frasePortugues = frasePortugues, this.fraseIngles = fraseIngles;
